@@ -1,4 +1,4 @@
-@Library('LandmarkSS-sharedlibs') _
+@Library('Jenkins-Shared-Library') _
 pipeline {
 agent any
 stages{
@@ -35,7 +35,7 @@ choice(name: 'BranchName', choices: ['master', 'development', 'stage'], descript
 }
 
 stages{
-stage('CheckouCode')
+stage('CheckoutCode')
 {
 steps
 {
